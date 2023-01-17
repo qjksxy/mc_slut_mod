@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "slut",
+  "version": "${version}",
+
+  "name": "Shuangliao University of Technology",
+  "description": "欢迎报考双辽理工大学!",
+  "authors": [
+    "apin"
+  ],
+  "contact": {
+    "homepage": "https://github.com/qjksxy/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.slut.mcmod.SlutMod"
+    ]
+  },
+  "mixins": [
+    "slut.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
