@@ -17,6 +17,10 @@ Time：2023.01.18
 
 # 正文
 
+## 项目相关
+为保证本项目风格统一协调，开发时参考此设计文档：
+[MSM 设计文档](https://github.com/qjksxy/mc_slut_mod/blob/master/MSM_Design_Document.md)
+
 ## 基本设定
 
 ## 模组内容
