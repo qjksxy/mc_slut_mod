@@ -13,6 +13,8 @@ import org.slf4j.LoggerFactory;
 import org.slut.mcmod.items.ExampleItem;
 import org.slut.mcmod.items.JiangeItem;
 import org.slut.mcmod.items.KaoJiangeItem;
+import org.slut.mcmod.items.tools.HumoZhiZhangToolMaterial;
+import org.slut.mcmod.items.weapon.HumoZhiZhang;
 
 public class SlutMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -43,6 +45,8 @@ public class SlutMod implements ModInitializer {
 					.build())
 			.maxCount(64));
 
+	public static final HumoZhiZhang HUMO_ZHI_ZHANG = new HumoZhiZhang(
+			new HumoZhiZhangToolMaterial(), 8, -0.8F, new Item.Settings());
 
 	@Override
 	public void onInitialize() {
@@ -51,6 +55,7 @@ public class SlutMod implements ModInitializer {
 		// Proceed with mild caution.
 		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "jiange"), JIANGE_ITEM);
 		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "kaojiange"), KAO_JIANGE_ITEM);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "humozhizhang"), HUMO_ZHI_ZHANG);
 
 		CompostingChanceRegistry.INSTANCE.add(JIANGE_ITEM, 0.6F);
 		CompostingChanceRegistry.INSTANCE.add(KAO_JIANGE_ITEM, 1F);
