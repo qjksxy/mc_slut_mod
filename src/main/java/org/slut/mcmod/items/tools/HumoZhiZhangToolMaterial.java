@@ -9,7 +9,7 @@ import net.minecraft.recipe.Ingredient;
 public class HumoZhiZhangToolMaterial implements ToolMaterial {
     @Override
     public int getDurability() {
-        return 500;
+        return 200;
     }
 
     @Override
@@ -19,7 +19,7 @@ public class HumoZhiZhangToolMaterial implements ToolMaterial {
 
     @Override
     public float getAttackDamage() {
-        return 3.0F;
+        return -1F;
     }
 
     @Override
