@@ -19,6 +19,14 @@ Time：2023.01.18
 
 ## 项目相关
 
+### 更新日志
+更多更新日志请见：
+[MSM 更新日志](https://github.com/qjksxy/mc_slut_mod/blob/master/MSM_Update_Log.md)
+
+**0.2:**
+- 添加食物 Jiange, Kao Jiange
+- 添加 Kao Jiange 相关配方
+
 ### 设计文档
 为保证本项目风格统一协调，开发时参考此设计文档：
 [MSM 设计文档](https://github.com/qjksxy/mc_slut_mod/blob/master/MSM_Design_Document.md)
