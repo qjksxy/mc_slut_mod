@@ -25,9 +25,11 @@ public class SlutMod implements ModInitializer {
 	public static final ExampleItem EXAMPLE_ITEM =
 			Registry.register(Registries.ITEM, new Identifier(MOD_ID, "example"),
 					new ExampleItem(new FabricItemSettings()));
-//	public static final JiangeItem JIANGE_ITEM =
-//			Registry.register(Registries.ITEM, new Identifier(MOD_ID, "jiange"),
-//					new JiangeItem((new FabricItemSettings()).food((new FoodComponent.Builder()).hunger(6).saturationModifier(1F).build())));
+
+	public static final Item QINGJIN_SUIMO_ITEM =
+			Registry.register(Registries.ITEM, new Identifier(MOD_ID, "qingjinsuimo"),
+					new Item(new FabricItemSettings()));
+
 	public static final JiangeItem JIANGE_ITEM = new JiangeItem(new Item.Settings()
 			.food((new FoodComponent.Builder())
 					.hunger(4)
