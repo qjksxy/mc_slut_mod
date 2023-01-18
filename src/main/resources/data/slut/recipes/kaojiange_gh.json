@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "slut:jiange"
+  },
+  "result": "slut:kaojiange",
+  "experience": 0.35,
+  "cookingtime": 300
+}

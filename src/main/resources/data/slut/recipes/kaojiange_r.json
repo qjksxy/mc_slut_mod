@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "slut:jiange"
+  },
+  "result": "slut:kaojiange",
+  "experience": 0.35,
+  "cookingtime": 200
+}
