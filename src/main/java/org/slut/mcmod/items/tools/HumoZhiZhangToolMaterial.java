@@ -1,8 +1,6 @@
 package org.slut.mcmod.items.tools;
 
-import net.fabricmc.tinyremapper.Main;
 import net.minecraft.item.Items;
-import net.minecraft.item.MinecartItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -19,7 +17,7 @@ public class HumoZhiZhangToolMaterial implements ToolMaterial {
 
     @Override
     public float getAttackDamage() {
-        return -1F;
+        return 0F;
     }
 
     @Override
