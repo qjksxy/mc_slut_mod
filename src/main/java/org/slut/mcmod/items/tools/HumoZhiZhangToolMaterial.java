@@ -27,7 +27,7 @@ public class HumoZhiZhangToolMaterial implements ToolMaterial {
 
     @Override
     public int getEnchantability() {
-        return 10;
+        return 8;
     }
 
     @Override

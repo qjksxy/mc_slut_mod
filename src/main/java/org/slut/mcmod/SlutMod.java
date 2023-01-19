@@ -39,19 +39,19 @@ public class SlutMod implements ModInitializer {
 
 	public static final JiangeItem JIANGE_ITEM = new JiangeItem(new Item.Settings()
 			.food((new FoodComponent.Builder())
-					.hunger(4)
+					.hunger(6)
 					.saturationModifier(0.8F)
 					.build())
 			.maxCount(64));
 	public static final KaoJiangeItem KAO_JIANGE_ITEM = new KaoJiangeItem(new Item.Settings()
 			.food((new FoodComponent.Builder())
-					.hunger(6)
+					.hunger(8)
 					.saturationModifier(1F)
 					.build())
 			.maxCount(64));
 
 	public static final HumoZhiZhang HUMO_ZHI_ZHANG = new HumoZhiZhang(
-			new HumoZhiZhangToolMaterial(), 8, -0.8F, new Item.Settings());
+			new HumoZhiZhangToolMaterial(), 8, -2F, new Item.Settings());
 
 	// 初始化物品组 图片暂用humo
 	public static final ItemGroup SLUT_ITEM_GROUP = FabricItemGroup.builder(new Identifier(MOD_ID, "maingroup"))
