@@ -53,7 +53,7 @@ public class SlutMod implements ModInitializer {
 	public static final HumoZhiZhang HUMO_ZHI_ZHANG = new HumoZhiZhang(
 			new HumoZhiZhangToolMaterial(), 8, -0.8F, new Item.Settings());
 
-	// 初始化物品组
+	// 初始化物品组 图片暂用humo
 	public static final ItemGroup SLUT_ITEM_GROUP = FabricItemGroup.builder(new Identifier(MOD_ID, "maingroup"))
 			.icon(() -> new ItemStack(HUMO_ZHI_ZHANG))
 			.build();
