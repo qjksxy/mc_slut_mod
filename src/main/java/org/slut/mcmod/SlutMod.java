@@ -2,11 +2,16 @@ package org.slut.mcmod;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -48,6 +53,11 @@ public class SlutMod implements ModInitializer {
 	public static final HumoZhiZhang HUMO_ZHI_ZHANG = new HumoZhiZhang(
 			new HumoZhiZhangToolMaterial(), 8, -0.8F, new Item.Settings());
 
+	// 初始化物品组
+	public static final ItemGroup SLUT_ITEM_GROUP = FabricItemGroup.builder(new Identifier(MOD_ID, "maingroup"))
+			.icon(() -> new ItemStack(HUMO_ZHI_ZHANG))
+			.build();
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -59,6 +69,15 @@ public class SlutMod implements ModInitializer {
 
 		CompostingChanceRegistry.INSTANCE.add(JIANGE_ITEM, 0.6F);
 		CompostingChanceRegistry.INSTANCE.add(KAO_JIANGE_ITEM, 1F);
+
+		// 将物品加入到物品组中
+		// TODO: 此处可以进行简化写法，比如利用反射等
+		ItemGroupEvents.modifyEntriesEvent(SLUT_ITEM_GROUP).register(content -> {
+			content.add(QINGJIN_SUIMO_ITEM);
+			content.add(JIANGE_ITEM);
+			content.add(KAO_JIANGE_ITEM);
+			content.add(HUMO_ZHI_ZHANG);
+		});
 
 		LOGGER.info("Hello Fabric world!");
 	}
