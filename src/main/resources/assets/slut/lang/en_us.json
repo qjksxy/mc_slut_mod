@@ -3,5 +3,8 @@
   "item.slut.example.tooltip": "tooltip",
   "item.slut.jiange": "Jiange",
   "item.slut.kaojiange": "Kao Jiange",
-  "item.slut.qingjinsuimo": "Qingjin Suimo"
+  "item.slut.qingjinsuimo": "Qingjin Suimo",
+  "item.slut.humozhizhang": "Humo Zhizhang",
+  "itemGroup.slut.maingroup": "SLUT Items",
+  "death.attack.humozhizhang": "Die Yin Lai Sheng"
 }

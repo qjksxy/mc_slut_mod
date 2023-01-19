@@ -7,3 +7,4 @@
 | jiange       | 健哥     | Jiange        |
 | kaojiange    | 健哥（被烤了 | Kao Jiange    |
 | qingjinsuimo | 青金碎末   | Qingjin Suimo |
+| humozhizhang | 护摩之杖   | Humo Zhizhang |
