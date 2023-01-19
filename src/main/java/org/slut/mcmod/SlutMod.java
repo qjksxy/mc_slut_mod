@@ -11,13 +11,14 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slut.mcmod.items.ExampleItem;
 import org.slut.mcmod.items.JiangeItem;
 import org.slut.mcmod.items.KaoJiangeItem;
+import org.slut.mcmod.items.MusicDisc;
 import org.slut.mcmod.items.tools.HumoZhiZhangToolMaterial;
 import org.slut.mcmod.items.weapon.HumoZhiZhang;
 
@@ -25,9 +26,10 @@ public class SlutMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final Logger LOGGER = LoggerFactory.getLogger("modid");
+
 
 	public static final String MOD_ID = "slut";
+	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	// 添加一个名为 slut:example 的物品
 	public static final ExampleItem EXAMPLE_ITEM =
 			Registry.register(Registries.ITEM, new Identifier(MOD_ID, "example"),
@@ -58,14 +60,20 @@ public class SlutMod implements ModInitializer {
 			.icon(() -> new ItemStack(HUMO_ZHI_ZHANG))
 			.build();
 
+	// 音乐
+	// 秒数？
+	public static final MusicDisc MUSIC_ORMOS = new MusicDisc(2, Sound.SOUND_ORMOS, new Item.Settings().rarity(Rarity.RARE), 100);
+
 	@Override
 	public void onInitialize() {
+		Sound.sound();
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "jiange"), JIANGE_ITEM);
 		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "kaojiange"), KAO_JIANGE_ITEM);
 		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "humozhizhang"), HUMO_ZHI_ZHANG);
+		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "music_ormos"), MUSIC_ORMOS);
 
 		CompostingChanceRegistry.INSTANCE.add(JIANGE_ITEM, 0.6F);
 		CompostingChanceRegistry.INSTANCE.add(KAO_JIANGE_ITEM, 1F);
@@ -77,6 +85,7 @@ public class SlutMod implements ModInitializer {
 			content.add(JIANGE_ITEM);
 			content.add(KAO_JIANGE_ITEM);
 			content.add(HUMO_ZHI_ZHANG);
+			content.add(MUSIC_ORMOS);
 		});
 
 		LOGGER.info("Hello Fabric world!");
