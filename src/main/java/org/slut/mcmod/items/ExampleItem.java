@@ -24,7 +24,7 @@ public class ExampleItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("item.slut.example.tooltip"));
+        tooltip.add(Text.translatable("item.slut.example_item.tooltip"));
     }
 
     @Override
