@@ -129,3 +129,4 @@ Version: 0.4.2R
 
 # 致谢
 
+感谢 [@LiSoulSpace](https://github.com/LiSoulSpace) 提供服务器并为本项目贡献了部分代码。
