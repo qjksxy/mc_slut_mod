@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "slut:item/humozhizhang"
+    "layer0": "slut:item/humozhizhang_item"
   }
 }

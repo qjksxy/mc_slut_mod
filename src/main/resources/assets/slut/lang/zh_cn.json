@@ -1,10 +1,12 @@
 {
-  "item.slut.example": "示例物品",
-  "item.slut.example.tooltip": "工具提示",
-  "item.slut.jiange": "健哥",
-  "item.slut.kaojiange": "健哥（被烤了",
-  "item.slut.qingjinsuimo": "青金碎末",
-  "item.slut.humozhizhang": "护摩之杖",
+  "item.slut.example_item": "示例物品",
+  "item.slut.example_item.tooltip": "工具提示",
+  "item.slut.jiange_item": "健哥",
+  "item.slut.kaojiange_item": "健哥（被烤了",
+  "item.slut.qingjinsuimo_item": "青金碎末",
+  "item.slut.humozhizhang_item": "护摩之杖",
   "itemGroup.slut.maingroup": "SLUT物品",
-  "death.attack.humozhizhang": "蝶引来生"
+  "death.attack.humozhizhang": "蝶引来生",
+  "item.slut.dis_ormos_item": "音乐唱片",
+  "item.slut.dis_ormos_item.desc": "喧繁之港"
 }

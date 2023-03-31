@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "slut:item/jiange"
+    "layer0": "slut:item/kaojiange_item"
   }
 }

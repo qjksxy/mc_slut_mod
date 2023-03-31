@@ -4,11 +4,11 @@
   "ingredients":
   [
     {"item": "minecraft:potato"},
-    {"item": "slut:qingjinsuimo"}
+    {"item": "slut:qingjinsuimo_item"}
   ],
   "result":
   {
-    "item": "slut:jiange",
+    "item": "slut:jiange_item",
     "count": 1
   }
 }

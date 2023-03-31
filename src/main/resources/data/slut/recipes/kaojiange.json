@@ -1,9 +1,9 @@
 {
   "type": "minecraft:smoking",
   "ingredient": {
-    "item": "slut:jiange"
+    "item": "slut:jiange_item"
   },
-  "result": "slut:kaojiange",
-  "experience": 0.35,
+  "result": "slut:kaojiange_item",
+  "experience": 0.5,
   "cookingtime": 100
 }

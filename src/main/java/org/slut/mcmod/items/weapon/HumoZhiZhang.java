@@ -22,7 +22,7 @@ public class HumoZhiZhang extends SwordItem {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         user.damage((new DamageSource("humozhizhang")).setBypassesArmor(), 6F);
-        user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 400, 1));
+        user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 400, 0));
         return TypedActionResult.success(user.getStackInHand(hand));
     }
 
@@ -33,8 +33,8 @@ public class HumoZhiZhang extends SwordItem {
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         PlayerEntity user = (PlayerEntity) attacker;
         if (user.hasStatusEffect(StatusEffects.STRENGTH)) {
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 50, 1));
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 50, 1));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 50, 0));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 50, 0));
         }
         return super.postHit(stack, target, attacker);
     }
