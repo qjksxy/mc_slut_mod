@@ -1,6 +1,8 @@
 # MSM: MC_SLUT_MOD
 MC Fabric Mod: Shuangliao University of Technology
 
+**此项目已经搁置，预计未来创建新项目代替当前项目**
+
 文档创建时间：2023.01.18
 
 最后编辑时间：2023.01.19
